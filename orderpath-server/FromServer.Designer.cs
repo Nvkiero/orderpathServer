@@ -71,6 +71,7 @@
             this.bt_KetThuc.TabIndex = 3;
             this.bt_KetThuc.Text = "End";
             this.bt_KetThuc.UseVisualStyleBackColor = true;
+            this.bt_KetThuc.Click += new System.EventHandler(this.bt_KetThuc_Click);
             // 
             // lb_TieuDe
             // 
@@ -106,6 +107,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Server";
             this.Text = "Server";
+            this.Load += new System.EventHandler(this.Server_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
