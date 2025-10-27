@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{12834EF4-2132-4822-9240-5627EAEBB13A}|orderpath-server\\orderpath-server.csproj|c:\\users\\lenovo\\source\\repos\\orderpathserver\\orderpath-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{12834EF4-2132-4822-9240-5627EAEBB13A}|orderpath-server\\orderpath-server.csproj|solutionrelative:orderpath-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12834EF4-2132-4822-9240-5627EAEBB13A}|orderpath-server\\orderpath-server.csproj|c:\\users\\lenovo\\source\\repos\\orderpathserver\\orderpath-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12834EF4-2132-4822-9240-5627EAEBB13A}|orderpath-server\\orderpath-server.csproj|solutionrelative:orderpath-server\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,6 +39,19 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-27T09:19:27.467Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\orderpathServer\\orderpath-server\\Form1.cs",
+              "RelativeDocumentMoniker": "orderpath-server\\Form1.cs",
+              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\orderpathServer\\orderpath-server\\Form1.cs",
+              "RelativeToolTip": "orderpath-server\\Form1.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAADwvyoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:27:12.541Z",
+              "EditorCaption": ""
             }
           ]
         }
