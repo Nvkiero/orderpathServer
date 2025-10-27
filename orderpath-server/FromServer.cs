@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace orderpath_server
 {
-    public partial class Form1 : Form
+    public partial class Server : Form
     {
-        public Form1()
+        public Server()
         {
             InitializeComponent();
         }
