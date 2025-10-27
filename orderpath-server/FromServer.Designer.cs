@@ -61,6 +61,7 @@
             this.bt_chay.TabIndex = 2;
             this.bt_chay.Text = "Start";
             this.bt_chay.UseVisualStyleBackColor = true;
+            this.bt_chay.Click += new System.EventHandler(this.bt_chay_Click);
             // 
             // bt_KetThuc
             // 
@@ -102,7 +103,7 @@
             this.Controls.Add(this.tb_status);
             this.Controls.Add(this.lb_status);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Server";
             this.Text = "Server";
             this.ResumeLayout(false);

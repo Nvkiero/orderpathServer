@@ -36,6 +36,7 @@ namespace orderpath_server
         List<User> users = new List<User>();
 
         public int port = 8080;
+        bool islistening = false;
 
         IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
 
@@ -74,6 +75,20 @@ namespace orderpath_server
                 serverlistener.Close();
             }
             catch (Exception ex) { MessageBox.Show($"Lỗi: {ex}"); }
+        }
+        private void bt_chay_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (islistening) return;
+                islistening = true;
+                serverthread = new Thread(StartThread);
+                serverthread.IsBackground = true;
+                serverthread.Start();
+            } catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex}");
+            }
         }
     }
 }
