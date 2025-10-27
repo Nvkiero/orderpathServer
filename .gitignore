@@ -2,4 +2,13 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
+<<<<<<< HEAD
 /.vs/orderpath-server/FileContentIndex/65019b71-bc6f-40ed-9cf8-2973041d7847.vsidx
+=======
+/.vs/orderpath-server/FileContentIndex/6169f001-a587-4ec5-9786-97b759a049bd.vsidx
+/.vs/orderpath-server/FileContentIndex/6dfeb7de-3b14-44ad-9206-d53d32d554b7.vsidx
+>>>>>>> da1f2777c6ea0eb3023aac8fdbbc4c265ca1f23c
+/.vs/orderpathServer/FileContentIndex/15915911-1618-4d7e-b47e-a35140cccbe3.vsidx
+/.vs/orderpathServer/FileContentIndex/fa61a2d1-5dfd-45ad-8e73-b6866baed455.vsidx
+/.vs/orderpath-server/FileContentIndex/15197ce4-58f1-480e-9918-95eb316d5bae.vsidx
+/.vs/orderpath-server/FileContentIndex/a863fba2-2616-422f-aa5e-a2e3a51cd6be.vsidx
