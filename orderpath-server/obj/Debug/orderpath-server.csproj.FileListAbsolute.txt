@@ -30,3 +30,35 @@ C:\Users\minh hieu\Source\Repos\orderpathServer\orderpath-server\obj\Debug\order
 C:\Users\minh hieu\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe
 C:\Users\minh hieu\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.pdb
 C:\Users\minh hieu\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe.config
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.exe.config
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.exe
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.pdb
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Buffers.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.IO.Pipelines.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Memory.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Json.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.ValueTuple.dll
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Buffers.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.IO.Pipelines.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Memory.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Json.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\bin\Debug\System.ValueTuple.xml
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.AssemblyReference.cache
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe.config
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath_server.Server.resources
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath_server.Properties.Resources.resources
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.GenerateResource.cache
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.CoreCompileInputs.cache
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpat.6E44FAE0.Up2Date
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe
+C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.pdb

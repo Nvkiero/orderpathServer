@@ -2,16 +2,17 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Net;
+using System.Net.Sockets;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Threading;
-using System.Net.Sockets;
-using System.Text.Json;
-
 
 namespace orderpath_server
 {
@@ -99,10 +100,14 @@ namespace orderpath_server
                 while ((bytesRead = client.Receive(buffer)) > 0)
                 {
                     // Giải mã chuỗi nhận được từ mảng byte -> chuỗi JSON
-                    string json = Encoding.UTF8.GetString(buffer, 0, bytesRead);
+                    string json = Encoding.ASCII.GetString(buffer, 0, bytesRead);
 
                     // Dùng JsonSerializer để chuyển JSON thành đối tượng User
                     User user = JsonSerializer.Deserialize<User>(json);
+
+                    // Thử dữ liệu trong SQL nếu trùng gửi lại cho client... không thể tạo username.
+                    // Code ở đây...
+
 
                     // Dùng lock để tránh xung đột khi nhiều luồng cùng thêm user
                     // lock đảm bảo không cho nhiều luồng cùng truy cập cùng 1 thời điểm
@@ -115,12 +120,11 @@ namespace orderpath_server
                         StringBuilder sb = new StringBuilder();
                         foreach (var u in users)
                         {
-                            sb.AppendLine($"[{u.username}]");
+                            sb.AppendLine(u.username);
                         }
-                        lb_ListClientConnect.Text = sb.ToString();
+                        tb_data.Text = sb.ToString();
                     }));
-                }
-
+                    }
                 // ngắt kết nối 
                 client.Close();
             }
@@ -184,6 +188,64 @@ namespace orderpath_server
         private void Server_Load(object sender, EventArgs e)
         {
             tb_status.Text = "Server đang đóng";
+        }
+        private string HashSHA256(string rawData)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
+        private void ConnectionDatabase(User user)
+        {
+            string connectionString = "Server=localhost;Database=QUANLYKHACHHANG;Integrated Security=true;";
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    connection.Open();
+                    string sql = "insert into khachhang(username, matKhau, hoTen, email, soDienThoai, ngaySinh, gioitinh) " +
+                                  "values(@username, @matkhau, @hoTen, @email, @soDienThoai, @ngaySinh, @gioitinh);";
+
+                    string check = "select count(*) from khachhang where username = @username;";
+                    using (var cmdCheck = new SqlCommand(check, connection))
+                    {
+                        cmdCheck.Parameters.AddWithValue("@username", user.username);
+                        int count = (int)cmdCheck.ExecuteScalar();
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Username đã tồn tại, vui lòng chọn tên khác.");
+                            return;
+                        }
+                    }
+                    string hashedPass = HashSHA256(user.pass);
+                    using (var cmd = new SqlCommand(sql, connection))
+                    {
+
+                        cmd.Parameters.AddWithValue("@username", user.username);
+                        cmd.Parameters.AddWithValue("@matkhau", hashedPass);
+                        cmd.Parameters.AddWithValue("@hoTen", user.fullName);
+                        cmd.Parameters.AddWithValue("@email", user.email);
+                        cmd.Parameters.AddWithValue("@soDienThoai", user.phone ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@ngaySinh", user.dob ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@gioitinh", user.gender ?? (object)DBNull.Value);
+                        int affected = cmd.ExecuteNonQuery();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return;
+                }
+                MessageBox.Show("Đăng ký thành công!");
+            }
         }
     }
 }

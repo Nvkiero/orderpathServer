@@ -33,7 +33,7 @@
             this.bt_chay = new System.Windows.Forms.Button();
             this.bt_KetThuc = new System.Windows.Forms.Button();
             this.lb_TieuDe = new System.Windows.Forms.Label();
-            this.lb_ListClientConnect = new System.Windows.Forms.ListBox();
+            this.tb_data = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lb_status
@@ -50,7 +50,7 @@
             // 
             this.tb_status.Location = new System.Drawing.Point(150, 24);
             this.tb_status.Name = "tb_status";
-            this.tb_status.Size = new System.Drawing.Size(234, 35);
+            this.tb_status.Size = new System.Drawing.Size(234, 30);
             this.tb_status.TabIndex = 1;
             // 
             // bt_chay
@@ -83,21 +83,20 @@
             this.lb_TieuDe.Text = "Client đang kết nối:";
             this.lb_TieuDe.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lb_ListClientConnect
+            // tb_data
             // 
-            this.lb_ListClientConnect.FormattingEnabled = true;
-            this.lb_ListClientConnect.ItemHeight = 27;
-            this.lb_ListClientConnect.Location = new System.Drawing.Point(375, 161);
-            this.lb_ListClientConnect.Name = "lb_ListClientConnect";
-            this.lb_ListClientConnect.Size = new System.Drawing.Size(687, 382);
-            this.lb_ListClientConnect.TabIndex = 5;
+            this.tb_data.Location = new System.Drawing.Point(365, 178);
+            this.tb_data.Multiline = true;
+            this.tb_data.Name = "tb_data";
+            this.tb_data.Size = new System.Drawing.Size(697, 357);
+            this.tb_data.TabIndex = 6;
             // 
             // Server
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 27F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1156, 767);
-            this.Controls.Add(this.lb_ListClientConnect);
+            this.Controls.Add(this.tb_data);
             this.Controls.Add(this.lb_TieuDe);
             this.Controls.Add(this.bt_KetThuc);
             this.Controls.Add(this.bt_chay);
@@ -120,7 +119,7 @@
         private System.Windows.Forms.Button bt_chay;
         private System.Windows.Forms.Button bt_KetThuc;
         private System.Windows.Forms.Label lb_TieuDe;
-        private System.Windows.Forms.ListBox lb_ListClientConnect;
+        private System.Windows.Forms.TextBox tb_data;
     }
 }
 
