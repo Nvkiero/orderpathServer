@@ -94,3 +94,35 @@ C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debu
 C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpat.6E44FAE0.Up2Date
 C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe
 C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.pdb
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\orderpath-server.exe.config
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\orderpath-server.exe
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\orderpath-server.pdb
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Buffers.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.IO.Pipelines.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Memory.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Numerics.Vectors.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Text.Encodings.Web.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Text.Json.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.ValueTuple.dll
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Buffers.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.IO.Pipelines.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Memory.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Numerics.Vectors.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Text.Encodings.Web.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Text.Json.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Uit\TCP_Server_2\orderpath-server\bin\Debug\System.ValueTuple.xml
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.csproj.AssemblyReference.cache
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.exe.config
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath_server.Server.resources
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath_server.Properties.Resources.resources
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.csproj.GenerateResource.cache
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.csproj.CoreCompileInputs.cache
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpat.6E44FAE0.Up2Date
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.exe
+D:\Uit\TCP_Server_2\orderpath-server\obj\Debug\orderpath-server.pdb
