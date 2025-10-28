@@ -51,7 +51,8 @@ namespace orderpath_server
             try
             {
                 //Tạo endpoint (địa chỉ IP và cổng server)
-                IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+                int port = 8081;
+                IPEndPoint ipendpoint = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8081);
 
                 //Tạo socket theo IPv4, kiểu stream (TCP), giao thức TCP
                 serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
@@ -63,7 +64,7 @@ namespace orderpath_server
                 serverSocket.Listen(10);
 
                 //Hiển thị thông báo server đã chạy 
-                Invoke(new Action(() => MessageBox.Show("Server started on port 8080")));
+                Invoke(new Action(() => MessageBox.Show($"Server started on port {port}")));
 
                 //Vòng lặp luôn chờ client kết nối
                 while (isListening)
@@ -107,7 +108,7 @@ namespace orderpath_server
 
                     // Thử dữ liệu trong SQL nếu trùng gửi lại cho client... không thể tạo username.
                     // Code ở đây...
-
+                    ConnectionDatabase(user);
 
                     // Dùng lock để tránh xung đột khi nhiều luồng cùng thêm user
                     // lock đảm bảo không cho nhiều luồng cùng truy cập cùng 1 thời điểm
@@ -205,16 +206,16 @@ namespace orderpath_server
         }
         private void ConnectionDatabase(User user)
         {
-            string connectionString = "Server=localhost;Database=QUANLYKHACHHANG;Integrated Security=true;";
+            string connectionString = "Server=localhost;Database=QLNguoiDung;Integrated Security=true;";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    string sql = "insert into khachhang(username, matKhau, hoTen, email, soDienThoai, ngaySinh, gioitinh) " +
+                    string sql = "insert into Users(username, matKhau, hoTen, email, soDienThoai, ngaySinh, gioitinh) " +
                                   "values(@username, @matkhau, @hoTen, @email, @soDienThoai, @ngaySinh, @gioitinh);";
 
-                    string check = "select count(*) from khachhang where username = @username;";
+                    string check = "select count(*) from Users where username = @username;";
                     using (var cmdCheck = new SqlCommand(check, connection))
                     {
                         cmdCheck.Parameters.AddWithValue("@username", user.username);
@@ -245,6 +246,36 @@ namespace orderpath_server
                     return;
                 }
                 MessageBox.Show("Đăng ký thành công!");
+            }
+        }
+        private bool KiemTraDangNhap(string TenDangNhap, string matKhau)
+        {
+            // tao chuoi la 1 ket noi
+            string connectionString = "Server=localhost;Database=QUANLYKHACHHANG;Integrated Security=True;";
+            // tao chuoi la 1 querry
+            string query = "SELECT COUNT(*) FROM khachhang WHERE username = @TenDangNhap AND matKhau = @matKhau";
+            // tao ket noi dong voi sql
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            // goi ham de ket noi voi sql va thuc hien querry
+            using (SqlCommand command = new SqlCommand(query, connection))
+            {
+
+                command.Parameters.AddWithValue("@TenDangNhap", TenDangNhap);
+                command.Parameters.AddWithValue("@matKhau", HashSHA256(matKhau));
+
+                try
+                {
+                    // kiem tra xem co tai khoan nao khop trong sql khong
+                    connection.Open();
+                    // thuc hien querry dem va gan vao bien count
+                    int count = (int)command.ExecuteScalar();
+                    return count > 0;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi kết nối cơ sở dữ liệu: " + ex.Message);
+                    return false;
+                }
             }
         }
     }

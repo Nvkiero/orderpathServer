@@ -62,3 +62,35 @@ C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath
 C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpat.6E44FAE0.Up2Date
 C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe
 C:\Users\trong\source\repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.pdb
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.exe.config
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.exe
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\orderpath-server.pdb
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Buffers.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.IO.Pipelines.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Memory.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Json.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.ValueTuple.dll
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Buffers.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.IO.Pipelines.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Memory.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Text.Json.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\bin\Debug\System.ValueTuple.xml
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.AssemblyReference.cache
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe.config
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath_server.Server.resources
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath_server.Properties.Resources.resources
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.GenerateResource.cache
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.csproj.CoreCompileInputs.cache
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpat.6E44FAE0.Up2Date
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.exe
+C:\Users\Nguyen Tien Vinh\Source\Repos\orderpathServer\orderpath-server\obj\Debug\orderpath-server.pdb
