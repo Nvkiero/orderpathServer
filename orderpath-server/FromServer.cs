@@ -262,7 +262,6 @@ namespace orderpath_server
                 SendToClient(socket, "SERVER_ERROR" + ex.Message);
             }
         }
-
         private void SendToClient(Socket socket, string message)
         {
             try
@@ -275,5 +274,4 @@ namespace orderpath_server
             }
         }
     }
-    // qwe123
 }
