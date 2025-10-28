@@ -296,7 +296,7 @@ namespace orderpath_server
         private void ConnectionSQLlogin(User user, Socket socket)
         {
             // neu co tai khoan khop o SQL thi tra ve
-            if (KiemTraDangNhap(user.fullName, user.pass))
+            if (KiemTraDangNhap(user.username, user.pass))
             {
                 string response = "LOGIN_SUCCESS";
                 byte[] responseBytes = Encoding.UTF8.GetBytes(response);
