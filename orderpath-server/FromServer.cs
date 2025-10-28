@@ -66,7 +66,7 @@ namespace orderpath_server
                     return false;
 
                 var session = activeTokens[token];
-                if (session.Expiry < DateTime.Now)
+                if (session.Expiry < DateTime.Now)  
                 {
                     activeTokens.Remove(token);
                     return false;
@@ -140,7 +140,6 @@ namespace orderpath_server
                     }
                     catch
                     {
-                        // nếu không parse được json, bỏ qua hoặc trả lỗi
                         SendToClient(client, "SERVER_ERROR|INVALID_JSON");
                         continue;
                     }
@@ -155,7 +154,6 @@ namespace orderpath_server
                     lock (users)
                         users.Add(user);
 
-                    // Cập nhật giao diện
                     Invoke(new Action(() =>
                     {
                         StringBuilder sb = new StringBuilder();
@@ -292,6 +290,7 @@ namespace orderpath_server
             }
         }
 
+        // ✅ ĐÃ SỬA — Gửi LOGIN_SUCCESS rồi TOKEN riêng
         private void ConnectionSQLlogin(User user, Socket socket)
         {
             try
@@ -311,16 +310,9 @@ namespace orderpath_server
                         };
                     }
 
-                    // 1) Gửi thông báo đăng nhập thành công trước
                     SendToClient(socket, "LOGIN_SUCCESS");
-
-                    // Tùy chọn: chờ 1 khoảng nhỏ để giảm khả năng Nagle/OS gộp 2 send thành 1 packet
-                    // (không bắt buộc nhưng giúp client dễ tách message hơn)
                     Thread.Sleep(50);
-
-                    // 2) Gửi token dưới dạng riêng biệt
-                    string tokenMsg = $"TOKEN|{token}|{expiry:o}";
-                    SendToClient(socket, tokenMsg);
+                    SendToClient(socket, $"TOKEN|{token}|{expiry:o}");
                 }
                 else
                 {
@@ -333,8 +325,6 @@ namespace orderpath_server
             }
         }
 
-
-        // ==================== LẤY THÔNG TIN NGƯỜI DÙNG ====================
         private string LayThongTinNguoiDung(string username)
         {
             string connectionString = "Server=localhost;Database=QLNguoiDung;Integrated Security=True;";
@@ -372,7 +362,6 @@ namespace orderpath_server
             return "USER_NOT_FOUND";
         }
 
-        // ==================== GỬI DỮ LIỆU VỀ CLIENT ====================
         private void SendToClient(Socket socket, string message)
         {
             try
@@ -380,10 +369,7 @@ namespace orderpath_server
                 byte[] data = Encoding.UTF8.GetBytes(message);
                 socket.Send(data);
             }
-            catch
-            {
-                // ignore lỗi khi client ngắt kết nối
-            }
+            catch { }
         }
     }
 }
