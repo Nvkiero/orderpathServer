@@ -259,7 +259,7 @@ namespace orderpath_server
             }
             catch (Exception ex)
             {
-                SendToClient(socket, "SERVER_ERROR|" + ex.Message);
+                SendToClient(socket, "SERVER_ERROR" + ex.Message);
             }
         }
 
@@ -270,7 +270,10 @@ namespace orderpath_server
                 byte[] data = Encoding.UTF8.GetBytes(message);
                 socket.Send(data);
             }
-            catch { }
+            catch {
+                MessageBox.Show($"haha");
+            }
         }
     }
+    // qwe123
 }
